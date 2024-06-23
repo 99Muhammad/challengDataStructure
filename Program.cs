@@ -71,6 +71,30 @@
             Console.WriteLine();
         }
 
+        private static int[] MiddleValue(int[] arr, int value)
+        {
+            int[] arr2 = new int[arr.Length + 1];
+            int middle = (arr.Length / 2) + 1;
+            if (arr.Length % 2 == 0)
+            {
+                middle = (arr.Length / 2);
+            }
+            Console.WriteLine(middle);
+            int index = 0;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (i == middle)
+                {
+                    arr2[index++] = value;
+                    arr2[index++] = arr[i];
+                    continue;
+                }
+                arr2[index++] = arr[i];
+            }
+            return arr2;
+        }
+
+
         static void Main(string[] args)
         {
 
@@ -86,5 +110,6 @@
             PrintArrayElement(NewArr);
 
         }
+
     }
 }
