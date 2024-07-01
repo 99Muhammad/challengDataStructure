@@ -10,6 +10,9 @@
             {
                 if(arr2[i] == value)
                     return true;
+
+
+
             }
             return false;
         }
@@ -35,6 +38,7 @@
             {
                 Console.Write(arr[i]+" , ");
             }
+            Console.WriteLine();
         }
         static void Main(string[] args)
         {

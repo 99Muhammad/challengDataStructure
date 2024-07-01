@@ -8,5 +8,5 @@ whiteboard challenge
 ![Remove Middle Index](./ChallengeImages/Screenshot(31).png)
 ![Middle Value](./ChallengeImages/MiddleValue.jpg)
 ![Duplicate Values](./Challenge/FileDuplicate/FileDuplicate/FileDuplicate/README.md)
-
+![WhitBoard](./Challenge/cc6_FindCommonElements/cc6_FindCommonElements/CommonElements.png)
 
