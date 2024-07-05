@@ -9,4 +9,6 @@ whiteboard challenge
 ![Middle Value](./ChallengeImages/MiddleValue.jpg)
 ![Duplicate Values](./Challenge/FileDuplicate/FileDuplicate/FileDuplicate/DuplicateValues.png)
 ![Reverse Word](./Challenge/ReverseWord/ReverseWord/ReverseWord.png)
+![WhitBoard](./Challenge/cc6_FindCommonElements/cc6_FindCommonElements/CommonElements.png)
+
 
