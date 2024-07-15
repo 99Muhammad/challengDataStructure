@@ -11,7 +11,7 @@ namespace lab7_LinkedList
     public class LinkedList
     {
         public Node head;
-        public int LengthOflinkedList = 0;
+        public static int LengthOflinkedList = 0;
 
         public bool Includes(int data)
         {
@@ -79,6 +79,38 @@ namespace lab7_LinkedList
             while (Current != null)
             {
                 Console.Write(Current.Value + " ");
+                Current = Current.Next;
+            }
+        }
+        public void CheckIfExist(Node CurrentNode)
+        {
+            Node node=CurrentNode.Next;
+            Node PrevNode = CurrentNode;
+            while (node != null)
+            {
+
+                if (node.Value == CurrentNode.Value)
+                {
+                    LinkedList.LengthOflinkedList-=1;
+                    PrevNode.Next = node.Next;
+                   
+                    node = node.Next;
+                } else
+                {
+                    PrevNode = node;
+                    node = node.Next;
+                }
+
+            }
+        }
+        public void RemoveDuplicateNode()
+        {
+            Node Current = head;
+
+            while(Current!=null)
+            {
+                
+                CheckIfExist(Current);
                 Current = Current.Next;
             }
         }

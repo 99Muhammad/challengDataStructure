@@ -18,3 +18,10 @@ whiteboard challenge
 [Linked_List](./DataStructure/LinkedList/LinkedList/README.md)
 
 
+---
+
+# Linked List Remove Duplicate
+
+[Linked_List Remove Duplicate](./DataStructure/LinkedList/LinkedList/Dublicate/README.md)
+
+
