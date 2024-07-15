@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{36259140-3722-4D15-A970-F43B3CAC954F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList", "LinkedList\LinkedList.csproj", "{36259140-3722-4D15-A970-F43B3CAC954F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList_test", "LinkedList_test\LinkedList_test.csproj", "{D2CF96A2-B605-446B-AD00-D630E49571E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList_test", "LinkedList_test\LinkedList_test.csproj", "{D2CF96A2-B605-446B-AD00-D630E49571E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveDuplicatesTests", "RemoveDuplicatesTests\RemoveDuplicatesTests.csproj", "{6A12EA92-D2CB-44FD-ADF3-BE6CB323BFF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D2CF96A2-B605-446B-AD00-D630E49571E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2CF96A2-B605-446B-AD00-D630E49571E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2CF96A2-B605-446B-AD00-D630E49571E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A12EA92-D2CB-44FD-ADF3-BE6CB323BFF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A12EA92-D2CB-44FD-ADF3-BE6CB323BFF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A12EA92-D2CB-44FD-ADF3-BE6CB323BFF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A12EA92-D2CB-44FD-ADF3-BE6CB323BFF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
