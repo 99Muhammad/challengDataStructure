@@ -15,8 +15,6 @@
 
 
             linked.InsertAtBeginning(7);
-            linked.InsertAtBeginning(1);
-
             linked.InsertAtBeginning(7);
             linked.InsertAtBeginning(7);
             linked.InsertAtBeginning(7);
