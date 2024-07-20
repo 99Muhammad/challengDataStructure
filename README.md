@@ -25,3 +25,9 @@ whiteboard challenge
 [Linked_List Remove Duplicate](./DataStructure/LinkedList/LinkedList/Dublicate/README.md)
 
 
+---
+
+# Merge Sorted Linked List
+
+[Linked_List Merge Sorted](./DataStructure/LinkedList/LinkedList/MergeSorted/README.md)
+

@@ -4,8 +4,20 @@
     {
         static void Main(string[] args)
         {
+            LinkedList MergedListBeforeSorted = new LinkedList();
+            LinkedList MergedListAfterSorted = new LinkedList();
+
+           
+            LinkedList linked1 = new LinkedList();
+            LinkedList linked2 = new LinkedList();
+
             LinkedList linked = new LinkedList();
 
+            linked.FillLinkedList(linked1, linked2, MergedListBeforeSorted);
+            
+            LinkedList.MergeSortedLists(linked1, linked2, MergedListBeforeSorted, MergedListAfterSorted);
+
+            //  linked.MergeSortedLists();
             //linked.InsertAtBeginning(10);
             //linked.InsertAtBeginning(5);
             //linked.InsertAtBeginning(10);
@@ -14,10 +26,10 @@
             //linked.InsertAtBeginning(5);
 
 
-            linked.InsertAtBeginning(7);
-            linked.InsertAtBeginning(7);
-            linked.InsertAtBeginning(7);
-            linked.InsertAtBeginning(7);
+            //linked.InsertAtBeginning(7);
+            //linked.InsertAtBeginning(7);
+            //linked.InsertAtBeginning(7);
+            //linked.InsertAtBeginning(7);
 
             //linked.InsertAtBeginning(1);
             //linked.InsertAtBeginning(7);
@@ -26,13 +38,13 @@
 
 
 
-            Console.WriteLine("Linked List Before Remove duplicate\n");
-            linked.PrintList();
+            // Console.WriteLine("Linked List Before Remove duplicate\n");
+            // linked.PrintList();
 
-           // Console.WriteLine("The content of linked list : ");
-            linked.RemoveDuplicateNode();
-            Console.WriteLine("\ninked List After Remove duplicate");
-            linked.PrintList();
+            //// Console.WriteLine("The content of linked list : ");
+            // linked.RemoveDuplicateNode();
+            // Console.WriteLine("\ninked List After Remove duplicate");
+            // linked.PrintList();
 
             //Console.WriteLine("\nShow Include Function when search about not founded data ");
             //int value = 10;
