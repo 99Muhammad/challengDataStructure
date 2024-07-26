@@ -15,8 +15,9 @@
 
             linked.FillLinkedList(linked1, linked2, MergedListBeforeSorted);
             
-            LinkedList.MergeSortedLists(linked1, linked2, MergedListBeforeSorted, MergedListAfterSorted);
 
+            LinkedList.MergeSortedLists(linked1, linked2, MergedListBeforeSorted, MergedListAfterSorted);
+           
             //  linked.MergeSortedLists();
             //linked.InsertAtBeginning(10);
             //linked.InsertAtBeginning(5);
