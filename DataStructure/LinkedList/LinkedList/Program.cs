@@ -13,6 +13,7 @@
 
             LinkedList linked = new LinkedList();
 
+
             linked.FillLinkedList(linked1, linked2, MergedListBeforeSorted);
             LinkedList.MergeSortedLists(linked1, linked2, MergedListBeforeSorted, MergedListAfterSorted);
            
