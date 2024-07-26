@@ -10,7 +10,6 @@
            
             LinkedList linked1 = new LinkedList();
             LinkedList linked2 = new LinkedList();
-
             LinkedList linked = new LinkedList();
 
             linked.FillLinkedList(linked1, linked2, MergedListBeforeSorted);
