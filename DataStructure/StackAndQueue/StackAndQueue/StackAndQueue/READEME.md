@@ -14,3 +14,9 @@
 # Output Code Queue In C# 
 ![Queue_Code](./Images/Queue_Output.png)
 
+
+
+------
+
+# Reverse Stack Using Queue  
+![Reverse Stack](./Images/ReverseStack_WhiteBoard.jpg)

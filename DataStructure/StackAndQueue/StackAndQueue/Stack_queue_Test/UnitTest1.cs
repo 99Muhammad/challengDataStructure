@@ -8,7 +8,7 @@ namespace Stack_queue_Test
         [Fact]
         public void PushingNodeToStack_Test()
         {
-            Stack stack = new Stack();
+            stack stack = new stack();
 
             stack.Push(10);
 
@@ -18,7 +18,7 @@ namespace Stack_queue_Test
         [Fact]
         public void PoppingNodeFromStack_Test()
         {
-            Stack stack = new Stack();
+            stack stack = new stack();
 
             stack.Push(10);
             stack.Push(20);
@@ -31,7 +31,7 @@ namespace Stack_queue_Test
         [Fact]
         public void isEmptyStack_Test()
         {
-            Stack stack = new Stack();
+            stack stack = new stack();
 
             stack.Push(10);
             stack.Push(20);

@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace StackAndQueue
 {
-    public class Stack
+    public class stack
     {
         public Node Top;
-        public Stack()
+        public stack()
         {
             Top = null;
         }

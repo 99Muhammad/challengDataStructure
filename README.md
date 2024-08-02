@@ -37,3 +37,9 @@ whiteboard challenge
 [Stack & Queue](./DataStructure/StackAndQueue/StackAndQueue/StackAndQueue/READEME.md)
 
 
+
+---
+# Reverse Stack Using Queue
+
+[Reverse Stack Using Queue](./DataStructure/StackAndQueue/StackAndQueue/StackAndQueue/StackReverseUsingQueue/READEME.md)
+
