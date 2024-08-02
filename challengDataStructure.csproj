@@ -9,7 +9,7 @@
 
   <ItemGroup>
     <Folder Include="Challenge\FileDuplicate\" />
-    <Folder Include="DataStructure\" />
+    <Folder Include="DataStructure\StackAndQueue\StackAndQueue\StackAndQueue\ReverseStackUsingQueue\" />
   </ItemGroup>
 
 </Project>
