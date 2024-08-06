@@ -43,3 +43,9 @@ whiteboard challenge
 
 [Reverse Stack Using Queue](./DataStructure/StackAndQueue/StackAndQueue/StackAndQueue/StackReverseUsingQueue/READEME.md)
 
+
+---
+# Remove Middle Element in the Stack 
+
+[Remove Middle Element in the Stack ](./DataStructure/StackAndQueue/StackAndQueue/StackAndQueue/DeleteMiddleElement/README.md)
+

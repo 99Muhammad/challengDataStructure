@@ -1,4 +1,5 @@
 ﻿
 # Reverse Stack Using Queue  
 
-![Reverse Stack](.//ReverseStack_WhiteBoard.jpg)
+![Reverse Stack](./Images/WhitBoard_DeleteMiddle.jpg)
+
