@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stack_queue_Test", "Stack_q
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StackQueue_Test", "StackQueue_Test\StackQueue_Test.csproj", "{C5E92442-517E-48DA-AD36-B6EFB790AB2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteMiddleValueInStack_Test", "DeleteMiddleValueInStack_Test\DeleteMiddleValueInStack_Test.csproj", "{DA6D7173-F6EF-4DF3-BEFD-2EC9882A147E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeleteMiddleValueInStack_Test", "DeleteMiddleValueInStack_Test\DeleteMiddleValueInStack_Test.csproj", "{DA6D7173-F6EF-4DF3-BEFD-2EC9882A147E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinStack_Test", "MinStack_Test\MinStack_Test.csproj", "{415F5974-96AB-4397-A18B-57173DFFA82C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{DA6D7173-F6EF-4DF3-BEFD-2EC9882A147E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA6D7173-F6EF-4DF3-BEFD-2EC9882A147E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA6D7173-F6EF-4DF3-BEFD-2EC9882A147E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{415F5974-96AB-4397-A18B-57173DFFA82C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{415F5974-96AB-4397-A18B-57173DFFA82C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{415F5974-96AB-4397-A18B-57173DFFA82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{415F5974-96AB-4397-A18B-57173DFFA82C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
