@@ -1,10 +1,10 @@
-﻿namespace ConsoleApp1
+﻿namespace MinStack
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+           
         }
     }
 }
