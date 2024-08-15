@@ -29,6 +29,7 @@
 
 
             BinarySearchTree binarySearchTree = new BinarySearchTree();
+           
             binarySearchTree.Add(45);
             binarySearchTree.Add(15);
             binarySearchTree.Add(79);
@@ -42,12 +43,15 @@
 
             //binarySearchTree.Print();
 
+
             Console.WriteLine("Does the BST contain 79? " + binarySearchTree.Containes(79));
             Console.WriteLine("Does the BST contain 100? " + binarySearchTree.Containes(100));
 
             binarySearchTree.Delete(79);
             Console.WriteLine("After delete 79 \n");
             binarySearchTree.Print();
+
+
         }
     }
 }
