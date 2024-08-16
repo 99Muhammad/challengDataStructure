@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace TreeImplementation
 {
     public class BinaryTree
     {
-
+        List<int> list = new List<int>();
         public BinaryTreeNode Root { get; set; }
 
         public BinaryTree()
@@ -125,6 +126,62 @@ namespace TreeImplementation
             Console.WriteLine();
         }
 
-     
+
+        public void Mirror()
+        {
+            Mirror(Root);
+        }
+
+        private void Mirror(BinaryTreeNode node)
+        {
+            if (node == null)
+                return;
+
+            Mirror(node.Left);
+            Mirror(node.Right);
+  
+            BinaryTreeNode temp = node.Left;
+            node.Left = node.Right;
+            node.Right = temp;
+        }
+
+
+        public List<int> InorderTraversal(BinaryTreeNode node)
+        {
+           
+            if (node != null)
+            {
+                InorderTraversal(node.Left);
+                list.Add(node.Value);
+                InorderTraversal(node.Right);
+               
+                
+              
+
+                //Console.Write(node.Value + " ");
+
+            }
+            return list;
+        }
+
+        public List<int>inordertraversal()
+        {
+            return InorderTraversal(Root);
+        }
+        
+
+        public void Swap()
+        {
+
+            int temp = 0;
+            
+            for(int i=0;i<list.Count/2; i++)
+            {
+                temp = list[i];
+                list[i] = list[list.Count - i - 1];
+                list[list.Count - i - 1] = temp;
+            }
+        }
+
     }
 }
