@@ -1,4 +1,5 @@
-﻿using System;
+﻿using lab7_LinkedList;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -170,6 +171,8 @@ namespace TreeImplementation
         }
         
 
+
+
         public void Swap()
         {
 
@@ -181,6 +184,34 @@ namespace TreeImplementation
                 list[i] = list[list.Count - i - 1];
                 list[list.Count - i - 1] = temp;
             }
+        }
+
+
+        public int? FindSecondMax(BinaryTreeNode node)
+        {
+            if (node == null) throw new Exception("the node is null");
+            int? max = null;
+            int? secondmax = null;
+            TraverseTree(node, ref max, ref secondmax);
+            if (secondmax == null)
+            { 
+                throw new InvalidOperationException("Not Fount");
+            }
+            return secondmax;
+        }
+
+        public void TraverseTree(BinaryTreeNode node, ref int? max, ref int? secondmax)
+        {
+            if (node.Left == null) return;
+
+            TraverseTree(node.Left, ref max, ref secondmax);
+            if (max == null || node.Value > max)
+            {
+                secondmax = max;
+                max = node.Value;
+            }
+
+            TraverseTree(node.Right, ref max, ref secondmax);
         }
 
     }
