@@ -214,5 +214,27 @@ namespace TreeImplementation
             TraverseTree(node.Right, ref max, ref secondmax);
         }
 
+        public int LeafSum()
+        {
+            if (Root == null) return 0;
+            return LeafSumHelper(Root);
+        }
+        private int LeafSumHelper(BinaryTreeNode node)
+        {
+            if (node == null)
+            {
+                return 0;
+            }
+
+
+            if (node.Left == null && node.Right == null)
+            {
+                return node.Value;
+            }
+
+
+            return LeafSumHelper(node.Left) + LeafSumHelper(node.Right);
+        }
+
     }
 }
