@@ -236,5 +236,36 @@ namespace TreeImplementation
             return LeafSumHelper(node.Left) + LeafSumHelper(node.Right);
         }
 
+        public List<int> LargestValueEachLevel()
+        {
+            List<int> largestValues = new List<int>();
+            if (Root == null) return largestValues;
+
+            Queue<BinarySearchTreeNode> queue = new Queue<BinarySearchTreeNode>();
+            queue.Enqueue(Root.Value);
+
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count;
+                int maxAtLevel = int.MinValue;
+
+                for (int i = 0; i < levelSize; i++)
+                {
+                    var currentNode = queue.Dequeue();
+                    if (currentNode.Value > maxAtLevel)
+                    {
+                        maxAtLevel = currentNode.Value;
+                    }
+
+                    if (currentNode.Left != null) queue.Enqueue(currentNode.Left);
+                    if (currentNode.Right != null) queue.Enqueue(currentNode.Right);
+                }
+
+                largestValues.Add(maxAtLevel);
+            }
+
+            return largestValues;
+        }
+
     }
 }
