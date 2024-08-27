@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TreeImplementation", "TreeI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BT_And_BST_Test", "BT_And_BST_Test\BT_And_BST_Test.csproj", "{77F16DAD-5B72-404B-B45F-B37252F36C9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MirrorBinaryTree_Test", "MirrorBinaryTree_Test\MirrorBinaryTree_Test.csproj", "{FC3DB93C-9A3F-45E3-B77B-D029B55726DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MirrorBinaryTree_Test", "MirrorBinaryTree_Test\MirrorBinaryTree_Test.csproj", "{FC3DB93C-9A3F-45E3-B77B-D029B55726DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Largest_Test", "Largest_Test\Largest_Test.csproj", "{8F0126D4-576C-4C8A-88E0-7817E790801D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{FC3DB93C-9A3F-45E3-B77B-D029B55726DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC3DB93C-9A3F-45E3-B77B-D029B55726DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FC3DB93C-9A3F-45E3-B77B-D029B55726DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F0126D4-576C-4C8A-88E0-7817E790801D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F0126D4-576C-4C8A-88E0-7817E790801D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F0126D4-576C-4C8A-88E0-7817E790801D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F0126D4-576C-4C8A-88E0-7817E790801D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
