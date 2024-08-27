@@ -1,12 +1,4 @@
-﻿using lab7_LinkedList;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-
-namespace TreeImplementation
+﻿namespace TreeImplementation
 {
     public class BinaryTree
     {
@@ -241,8 +233,8 @@ namespace TreeImplementation
             List<int> largestValues = new List<int>();
             if (Root == null) return largestValues;
 
-            Queue<BinarySearchTreeNode> queue = new Queue<BinarySearchTreeNode>();
-            queue.Enqueue(Root.Value);
+            Queue<BinaryTreeNode> queue = new Queue<BinaryTreeNode>();
+            queue.Enqueue(Root);
 
             while (queue.Count > 0)
             {
