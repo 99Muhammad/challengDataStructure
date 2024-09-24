@@ -45,7 +45,7 @@ namespace lab7_LinkedList
             Count++;
             LengthOflinkedList++;
         }
-        public void InsertAtEnd(int Value)
+        public void InsertAtEnd(int Value) 
         {
             Node newNode = new Node();
             newNode.Value = Value;
@@ -62,7 +62,9 @@ namespace lab7_LinkedList
                 current = current.Next;
             }
 
+            newNode.Next = current.Next;
             current.Next = newNode;
+          
 
 
         }
