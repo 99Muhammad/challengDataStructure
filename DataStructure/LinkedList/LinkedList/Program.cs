@@ -4,26 +4,45 @@
     {
         static void Main(string[] args)
         {
-            LinkedList MergedListBeforeSorted = new LinkedList();
-            LinkedList MergedListAfterSorted = new LinkedList();
 
-           
-            LinkedList linked1 = new LinkedList();
-            LinkedList linked2 = new LinkedList();
+            /*
+             Input:  Head -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> Null, k = 2
+             Output: Head -> 3 -> 4 -> 5 -> 6 -> 1 -> 2 -> Nul 
+             
+                Input:  Head -> 10 -> 20 -> 30 -> 40 -> 50 -> Null, k = 3
+                Output: Head -> 40 -> 50 -> 10 -> 20 -> 30 -> Null
+
+            Input:  Head -> 5 -> 10 -> 15 -> 20 -> Null, k = 1
+            Output: Head -> 10 -> 15 -> 20 -> 5 -> Null
+             */
+
+            //LinkedList MergedListBeforeSorted = new LinkedList();
+            //LinkedList MergedListAfterSorted = new LinkedList();
+
+
+            //LinkedList linked1 = new LinkedList();
+            //LinkedList linked2 = new LinkedList();
             LinkedList linked = new LinkedList();
 
 
-            linked.FillLinkedList(linked1, linked2, MergedListBeforeSorted);
-            LinkedList.MergeSortedLists(linked1, linked2, MergedListBeforeSorted, MergedListAfterSorted);
-           
-            //  linked.MergeSortedLists();
-            //linked.InsertAtBeginning(10);
-            //linked.InsertAtBeginning(5);
-            //linked.InsertAtBeginning(10);
-            //linked.InsertAtBeginning(20);
-            //linked.InsertAtBeginning(20);
-            //linked.InsertAtBeginning(5);
+            //linked.FillLinkedList(linked1, linked2, MergedListBeforeSorted);
+            //LinkedList.MergeSortedLists(linked1, linked2, MergedListBeforeSorted, MergedListAfterSorted);
 
+            //  linked.MergeSortedLists();
+            linked.InsertAtBeginning(20);
+            linked.InsertAtBeginning(15);
+            linked.InsertAtBeginning(10);
+            linked.InsertAtBeginning(5);
+            //linked.InsertAtBeginning(2);
+            //linked.InsertAtBeginning(1);
+
+
+            Console.WriteLine("Before rotate");
+           linked.PrintList();
+
+            Console.WriteLine("\nAfter rotate");
+            linked.RotateLeft(7);
+            linked.PrintList();
 
             //linked.InsertAtBeginning(7);
             //linked.InsertAtBeginning(7);
