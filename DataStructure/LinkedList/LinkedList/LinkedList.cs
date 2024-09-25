@@ -45,7 +45,7 @@ namespace lab7_LinkedList
             Count++;
             LengthOflinkedList++;
         }
-        public void InsertAtEnd(int Value)
+        public void InsertAtEnd(int Value) 
         {
             Node newNode = new Node();
             newNode.Value = Value;
@@ -62,7 +62,9 @@ namespace lab7_LinkedList
                 current = current.Next;
             }
 
+            newNode.Next = current.Next;
             current.Next = newNode;
+          
 
 
         }
@@ -250,7 +252,39 @@ namespace lab7_LinkedList
             MergedListAfterSorted.PrintList();
         }
 
-    
+
+
+        public List<int> ToList()
+        {
+            var list = new List<int>();
+            Node current = head;
+
+            while (current != null)
+            {
+                list.Add(current.Value);
+                current = current.Next;
+            }
+
+            return list;
+        }
+
+        public void RotateLeft(int k)
+        {
+            int Count = 0;
+            Node Current = head;
+            while(Count++!=k && Current!=null)
+            {
+                if(k> LengthOflinkedList)
+                {
+                    Console.WriteLine($"The length of linked list is less than [ {k} ]");
+
+                    return;
+                }
+                InsertAtEnd(Current.Value);
+                Remove(Current.Value);
+                Current = Current.Next;
+            }
+        }
 }
 }
 

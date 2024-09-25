@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList_test", "LinkedLi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveDuplicatesTests", "RemoveDuplicatesTests\RemoveDuplicatesTests.csproj", "{6A12EA92-D2CB-44FD-ADF3-BE6CB323BFF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergedLinkedListTests", "TestProject1\MergedLinkedListTests.csproj", "{0CAD96C3-696C-46E9-BD76-BAAA5F5E7707}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MergedLinkedListTests", "TestProject1\MergedLinkedListTests.csproj", "{0CAD96C3-696C-46E9-BD76-BAAA5F5E7707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotateLinkedListTests", "RotateLinkedListTests\RotateLinkedListTests.csproj", "{E0088158-402C-4B60-9AFE-A9DF66D12450}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{0CAD96C3-696C-46E9-BD76-BAAA5F5E7707}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CAD96C3-696C-46E9-BD76-BAAA5F5E7707}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CAD96C3-696C-46E9-BD76-BAAA5F5E7707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0088158-402C-4B60-9AFE-A9DF66D12450}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0088158-402C-4B60-9AFE-A9DF66D12450}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0088158-402C-4B60-9AFE-A9DF66D12450}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0088158-402C-4B60-9AFE-A9DF66D12450}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
