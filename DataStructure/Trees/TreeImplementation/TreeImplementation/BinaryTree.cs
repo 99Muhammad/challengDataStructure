@@ -5,6 +5,8 @@
         List<int> list = new List<int>();
         public BinaryTreeNode Root { get; set; }
 
+
+
         public BinaryTree()
         {
             Root = null;
@@ -12,8 +14,43 @@
 
         public void Insert(int Value)
         {
-            var newNode = new BinaryTreeNode(Value);
+            //var newNode = new BinaryTreeNode(Value);
 
+            //if (Root == null)
+            //{
+            //    Root = newNode;
+            //    return;
+            //}
+
+            //Queue<BinaryTreeNode> queue = new Queue<BinaryTreeNode>();
+            //queue.Enqueue(Root);
+
+            //while (queue.Count > 0)
+            //{
+            //    var current = queue.Dequeue();
+
+            //    if (current.Left == null)
+            //    {
+            //        current.Left = newNode;
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        queue.Enqueue(current.Left);
+            //    }
+            //    if (current.Right == null)
+            //    {
+            //        current.Right = newNode;
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        queue.Enqueue(current.Right);
+            //    }
+
+            //}
+
+            var newNode = new BinaryTreeNode(Value);
             if (Root == null)
             {
                 Root = newNode;
@@ -27,6 +64,7 @@
             {
                 var current = queue.Dequeue();
 
+                // Insert in level order
                 if (current.Left == null)
                 {
                     current.Left = newNode;
@@ -36,6 +74,7 @@
                 {
                     queue.Enqueue(current.Left);
                 }
+
                 if (current.Right == null)
                 {
                     current.Right = newNode;
@@ -45,7 +84,6 @@
                 {
                     queue.Enqueue(current.Right);
                 }
-
             }
         }
 
@@ -259,5 +297,73 @@
             return largestValues;
         }
 
+
+        public void InsertLeft(BinaryTreeNode parent, int value)
+        {
+            if (parent.Left == null)
+            {
+                parent.Left = new BinaryTreeNode(value);
+            }
+        }
+
+        public void InsertRight(BinaryTreeNode parent, int value)
+        {
+            if (parent == null)
+            {
+                throw new ArgumentNullException(nameof(parent), "Parent node cannot be null.");
+            }
+
+            if (parent.Right == null)
+            {
+                parent.Right = new BinaryTreeNode(value);
+            }
+            else
+            {
+                // If there is already a right child, we can continue down the right side
+                InsertRight(parent.Right, value);
+            }
+        }
+
+
+        public void PrintRightView()
+        {
+            if (Root == null) return;
+
+            Queue<BinaryTreeNode> queue = new Queue<BinaryTreeNode>();
+            queue.Enqueue(Root);
+
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count;
+
+                for (int i = 0; i < levelSize; i++)
+                {
+                    var currentNode = queue.Dequeue();
+
+                    // If it's the last node of this level, print it
+                    if (i == levelSize - 1)
+                    {
+                        Console.Write(currentNode.Value + " ");
+                    }
+
+                    // Add the children for the next level
+                    if (currentNode.Left != null)
+                    {
+                        queue.Enqueue(currentNode.Left);
+                    }
+
+                    if (currentNode.Right != null)
+                    {
+                        queue.Enqueue(currentNode.Right);
+                    }
+                }
+            }
+            Console.WriteLine();
+        }
+            
+        
+
     }
+
+
 }

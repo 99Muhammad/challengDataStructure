@@ -80,36 +80,72 @@ namespace TreeImplementation
             binaryTree.Print();*/
 
 
-            BinaryTree binaryTree = new BinaryTree();
+            // BinaryTree binaryTree = new BinaryTree();
 
-            binaryTree.Insert(4);
-            binaryTree.Insert(8);
-            binaryTree.Insert(7);
-            binaryTree.Insert(12);
-            binaryTree.Insert(9);
-          
-
-           // List<int> originalInorder = binaryTree.inordertraversal(); // Output: [12, 8, 9, 4, 7]
-            //foreach (int i in originalInorder)
-            {
-               // Console.Write(i + " ");
-            }
-
-            Console.WriteLine("\nOriginal binary tree :\n");
-            binaryTree.Print();
-
-         
-            binaryTree.Mirror();
-            
-           // foreach (int i in originalInorder)
-            {
-              //  Console.Write(i + " ");
-            }
-           
-           Console.WriteLine("\nMirrored binary tree :\n");
-           binaryTree.Print();
+            // binaryTree.Insert(4);
+            // binaryTree.Insert(8);
+            // binaryTree.Insert(7);
+            // binaryTree.Insert(12);
+            // binaryTree.Insert(9);
 
 
+            //// List<int> originalInorder = binaryTree.inordertraversal(); // Output: [12, 8, 9, 4, 7]
+            // //foreach (int i in originalInorder)
+            // {
+            //    // Console.Write(i + " ");
+            // }
+
+            // Console.WriteLine("\nOriginal binary tree :\n");
+            // binaryTree.Print();
+
+
+            // binaryTree.Mirror();
+
+            //// foreach (int i in originalInorder)
+            // {
+            //   //  Console.Write(i + " ");
+            // }
+
+            //Console.WriteLine("\nMirrored binary tree :\n");
+            //binaryTree.Print();
+
+
+            //BinaryTree tree = new BinaryTree();
+            //tree.Insert(2);
+            //tree.Insert(3);
+            //tree.Insert(5);
+            //tree.Insert(4);
+            //tree.Insert(6);
+            //tree.Insert(7);
+            ////tree.Insert(20);
+            //tree.Print();
+
+            //tree.PrintRightView();
+            //BinaryTree tree = new BinaryTree();
+            //tree.Root = new BinaryTreeNode(1);
+
+            //tree.InsertLeft(tree.Root, 2);
+            //tree.InsertRight(tree.Root, 3);
+
+            //tree.InsertLeft(tree.Root.Left, 4);
+            //tree.InsertRight(tree.Root.Right, 5);
+
+            //tree.InsertRight(tree.Root.Left.Left, 7);
+
+            // Example usage:
+            BinaryTree tree = new BinaryTree();
+            tree.Root = new BinaryTreeNode(1); // Root node
+
+            // Inserting nodes only to the right
+            tree.InsertRight(tree.Root, 2); // Right of 1
+            tree.InsertRight(tree.Root, 3); // Right of 2
+            tree.InsertRight(tree.Root, 4); // Right of 3
+            tree.InsertRight(tree.Root, 5); // Right of 4
+
+
+            tree.Print();
+            Console.WriteLine("Right view of the binary tree:");
+            tree.PrintRightView();  // Output: 1 3 5 7
 
 
 
