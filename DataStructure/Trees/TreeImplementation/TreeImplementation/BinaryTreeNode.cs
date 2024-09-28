@@ -8,16 +8,26 @@ namespace TreeImplementation
 {
     public class BinaryTreeNode
     {
+        //public int Value { get; set; }
+        //public BinaryTreeNode Left { get; set; }
+        //public BinaryTreeNode Right { get; set; }
+
+        //public BinaryTreeNode(int Value)
+        //{
+        //    this.Value = Value;
+        //    Left = null;
+        //    Right = null;
+
+        //}
         public int Value { get; set; }
         public BinaryTreeNode Left { get; set; }
         public BinaryTreeNode Right { get; set; }
 
-        public BinaryTreeNode(int Value)
+        public BinaryTreeNode(int value)
         {
-            this.Value = Value;
+            this.Value = value;
             Left = null;
             Right = null;
-            
         }
 
     }
