@@ -360,8 +360,55 @@
             }
             Console.WriteLine();
         }
-            
-        
+
+        public int FindMaxLevelNodes(BinaryTreeNode root)
+        {
+            if (root == null)
+            {
+                return -1;
+            }
+
+            Queue<BinaryTreeNode> queue = new Queue<BinaryTreeNode>();
+            queue.Enqueue(root);
+
+            int maxNodes = 0;
+            int levelWithMaxNodes = 0;
+            int currentLevel = 0;
+
+            while (queue.Count > 0)
+            {
+                int levelSize = queue.Count; 
+
+               
+                if (levelSize > maxNodes)
+                {
+                    maxNodes = levelSize;
+                    levelWithMaxNodes = currentLevel;
+                }
+
+                
+                for (int i = 0; i < levelSize; i++)
+                {
+                    BinaryTreeNode node = queue.Dequeue();
+
+                 
+                    if (node.Left != null)
+                    {
+                        queue.Enqueue(node.Left);
+                    }
+                    if (node.Right != null)
+                    {
+                        queue.Enqueue(node.Right);
+                    }
+                }
+
+                currentLevel++;
+            }
+
+            return levelWithMaxNodes;
+        }
+
+
 
     }
 
