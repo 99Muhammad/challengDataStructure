@@ -133,23 +133,32 @@ namespace TreeImplementation
             //tree.InsertRight(tree.Root.Left.Left, 7);
 
             // Example usage:
-            BinaryTree tree = new BinaryTree();
-            tree.Root = new BinaryTreeNode(1); // Root node
+            //BinaryTree tree = new BinaryTree();
+            //tree.Root = new BinaryTreeNode(1); // Root node
 
-            // Inserting nodes only to the right
-            tree.InsertRight(tree.Root, 2); // Right of 1
-            tree.InsertRight(tree.Root, 3); // Right of 2
-            tree.InsertRight(tree.Root, 4); // Right of 3
-            tree.InsertRight(tree.Root, 5); // Right of 4
-
-
-            tree.Print();
-            Console.WriteLine("Right view of the binary tree:");
-            tree.PrintRightView();  // Output: 1 3 5 7
+            //// Inserting nodes only to the right
+            //tree.InsertRight(tree.Root, 2); // Right of 1
+            //tree.InsertRight(tree.Root, 3); // Right of 2
+            //tree.InsertRight(tree.Root, 4); // Right of 3
+            //tree.InsertRight(tree.Root, 5); // Right of 4
 
 
+            //tree.Print();
+            //Console.WriteLine("Right view of the binary tree:");
+            //tree.PrintRightView();  // Output: 1 3 5 7
 
+            BinaryTree Btree = new BinaryTree();
+            Btree.Root = new BinaryTreeNode(1);
+            Btree.Root.Left = new BinaryTreeNode(2);
+            Btree.Root.Right = new BinaryTreeNode(3);
+            Btree.Root.Left.Left = new BinaryTreeNode(4);
+            Btree.Root.Left.Right = new BinaryTreeNode(5);
+            Btree.Root.Right.Right = new BinaryTreeNode(6);
+            Btree.Root.Left.Left.Left = new BinaryTreeNode(7);
 
+            int maxLevel = Btree.FindMaxLevelNodes(Btree.Root); // Output: 2
+
+            Console.WriteLine($"Max level is : {maxLevel}");
 
 
 
