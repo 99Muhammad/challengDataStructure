@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Largest_Test", "Largest_Tes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RightViewtest", "RightViewtest\RightViewtest.csproj", "{E9FF3EAA-9161-49B8-8E01-EAD893E5070E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxLevelNodesTest", "MaxLevelNodesTest\MaxLevelNodesTest.csproj", "{D10EBDA6-95FC-4EB1-B087-FE3FB2532FA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxLevelNodesTest", "MaxLevelNodesTest\MaxLevelNodesTest.csproj", "{D10EBDA6-95FC-4EB1-B087-FE3FB2532FA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumDepthTests", "MinimumDepthTests\MinimumDepthTests.csproj", "{AA6B1446-ED54-4D66-BD9E-535A932F4C93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{D10EBDA6-95FC-4EB1-B087-FE3FB2532FA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D10EBDA6-95FC-4EB1-B087-FE3FB2532FA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D10EBDA6-95FC-4EB1-B087-FE3FB2532FA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA6B1446-ED54-4D66-BD9E-535A932F4C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA6B1446-ED54-4D66-BD9E-535A932F4C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA6B1446-ED54-4D66-BD9E-535A932F4C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA6B1446-ED54-4D66-BD9E-535A932F4C93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

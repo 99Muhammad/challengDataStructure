@@ -156,11 +156,11 @@ namespace TreeImplementation
             Btree.Root.Right.Right = new BinaryTreeNode(6);
             Btree.Root.Left.Left.Left = new BinaryTreeNode(7);
 
-            int maxLevel = Btree.FindMaxLevelNodes(Btree.Root); // Output: 2
+            //int maxLevel = Btree.FindMaxLevelNodes(Btree.Root); // Output: 2
 
-            Console.WriteLine($"Max level is : {maxLevel}");
+            //Console.WriteLine($"Max level is : {maxLevel}");
 
-
+            Console.WriteLine($"Min Depth Nodes is : {Btree.MinDepth(Btree.Root)}");
 
         }
     }

@@ -408,7 +408,21 @@
             return levelWithMaxNodes;
         }
 
+        public int MinDepth (BinaryTreeNode Root)
+        {
+            if (Root == null)
+                return 0;
+            if (Root.Left == null && Root.Right == null)
+                return 1;
+            if (Root.Left != null && Root.Right == null)
+                return 1 + MinDepth(Root.Left);
+            if(Root.Left==null&& Root.Right!=null)
+                return 1+MinDepth(Root.Right);
 
+            int LNode = 1 + MinDepth(Root.Left);
+            int RNode=1+MinDepth(Root.Right);
+            return LNode<RNode?LNode:RNode;
+        }
 
     }
 

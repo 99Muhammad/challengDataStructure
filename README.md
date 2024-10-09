@@ -87,3 +87,6 @@ C:\Users\Student\source\repos\challengDataStructure\DataStructure\
 # Max nodes in level 
 [Max ](./DataStructure/Trees/TreeImplementation/TreeImplementation/MaxLevelNodes/README.md)
 
+---
+# Min Depth 
+[MinDepth](./DataStructure/Trees/TreeImplementation/TreeImplementation/MinimumDepth/README.md)
