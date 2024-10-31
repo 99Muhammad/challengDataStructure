@@ -424,6 +424,73 @@
             return LNode<RNode?LNode:RNode;
         }
 
+        public void ConvertBtToBst(BinaryTreeNode root)
+        {
+            Console.WriteLine("Binary  tree Before Convert to Bst ");
+
+            InOrder();
+            List<int> nodes = new List<int>();
+            Nodes(root, nodes);
+            nodes.Sort();
+            int midIndex = nodes.Count / 2;
+            BinaryTreeNode newBt = new BinaryTreeNode(nodes[midIndex]);
+            nodes.RemoveAt(midIndex);
+
+            foreach (var item in nodes)
+            {
+                AddToBst(ref newBt, item);
+            }
+            Console.WriteLine();
+            Console.WriteLine("Binary tree After Convert to Bst ");
+
+            InOrder();
+        }
+
+        public void Nodes(BinaryTreeNode root, List<int> nodes)
+        {
+            if (root == null)
+            {
+                return;
+            }
+            nodes.Add(root.Value);
+            Nodes(root.Left, nodes);
+            Nodes(root.Right, nodes);
+        }
+
+        public void AddToBst(ref BinaryTreeNode root, int num)
+        {
+            if (root == null)
+            {
+                root = new BinaryTreeNode(num);
+                return;
+            }
+            BinaryTreeNode temp = root;
+            BinaryTreeNode parent = null;
+
+            while (temp != null)
+            {
+                parent = temp;
+                if (num > temp.Value)
+                {
+                    temp = temp.Right;
+                }
+                else
+                {
+                    temp = temp.Left;
+                }
+            }
+
+            BinaryTreeNode newNode = new BinaryTreeNode(num);
+            if (num > parent.Value)
+            {
+                parent.Right = newNode;
+            }
+            else
+            {
+                parent.Left = newNode;
+            }
+        }
+
     }
 
 
