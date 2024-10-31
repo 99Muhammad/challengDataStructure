@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RightViewtest", "RightViewt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MaxLevelNodesTest", "MaxLevelNodesTest\MaxLevelNodesTest.csproj", "{D10EBDA6-95FC-4EB1-B087-FE3FB2532FA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimumDepthTests", "MinimumDepthTests\MinimumDepthTests.csproj", "{AA6B1446-ED54-4D66-BD9E-535A932F4C93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MinimumDepthTests", "MinimumDepthTests\MinimumDepthTests.csproj", "{AA6B1446-ED54-4D66-BD9E-535A932F4C93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTtoBST_test", "BTtoBST_test\BTtoBST_test.csproj", "{6324200B-E4CF-4943-B62A-AC0C8A1E4CF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{AA6B1446-ED54-4D66-BD9E-535A932F4C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA6B1446-ED54-4D66-BD9E-535A932F4C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA6B1446-ED54-4D66-BD9E-535A932F4C93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6324200B-E4CF-4943-B62A-AC0C8A1E4CF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6324200B-E4CF-4943-B62A-AC0C8A1E4CF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6324200B-E4CF-4943-B62A-AC0C8A1E4CF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6324200B-E4CF-4943-B62A-AC0C8A1E4CF5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

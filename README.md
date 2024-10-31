@@ -90,3 +90,7 @@ C:\Users\Student\source\repos\challengDataStructure\DataStructure\
 ---
 # Min Depth 
 [MinDepth](./DataStructure/Trees/TreeImplementation/TreeImplementation/MinimumDepth/README.md)
+
+---
+# BT_To_BST
+[BTtoBST](./DataStructure/Trees/TreeImplementation/TreeImplementation/BTreeToBST/READEME.md)
